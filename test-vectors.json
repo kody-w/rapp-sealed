@@ -1,0 +1,17 @@
+{
+  "spec": "rapp-sealed/1.0",
+  "kdf": {
+    "algo": "PBKDF2",
+    "hash": "SHA-256",
+    "iterations": 210000,
+    "salt": "rapp-neighborhood-5a/1",
+    "secret": "rapp-sealed-test-vector",
+    "derived_key_256_hex": "452f74dc74c5f054f2b7e3a7c827a50b48d23d9b2a84e76c08f18ae1948611fd"
+  },
+  "aes_gcm": {
+    "note": "fixed zero IV used only to make this vector deterministic; real seals use a random 12-byte IV",
+    "iv_hex": "000000000000000000000000",
+    "plaintext": "{\"schema\":\"rapp-twin-chat/1.0\",\"kind\":\"say\",\"payload\":{\"text\":\"hi\"}}",
+    "ciphertext_with_tag_hex": "385f4c93e95a2035c2a38558be249e73f4868a581c8dd1c50bb20bdc46927c315a1ef6a4f0b62068f68946c1ab95137a6c949a80eb5dd2dfba522f5db27613dd938d623b3ac0b9285fe6b351c591ecda6b6df0d9"
+  }
+}
