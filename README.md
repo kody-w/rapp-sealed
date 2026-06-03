@@ -1,8 +1,11 @@
 # rapp-sealed
 
 **`rapp-sealed/1.0`** — the canonical end‑to‑end sealed‑envelope codec for the RAPP neighborhood.
-One reference implementation + conformance vectors, so every place that seals (the browser
-vBrainstem, the bridge, the CLI, Node) speaks **exactly** the same bytes and can't silently drift.
+One reference implementation + conformance vectors, so every place that seals (e.g. the browser
+vBrainstem, the bridge, the CLI, Node, the rapp-mcp host) speaks **exactly** the same bytes and
+can't silently drift. The codec is **transport‑agnostic** — any caller that reaches the brainstem
+seals with it; the authoritative enumeration of transports lives in
+[rapp-neighborhood-protocol](https://github.com/kody-w/rapp-neighborhood-protocol) §5.
 
 > Treat the wire — broker, TURN, relays, the whole network — as **fully untrusted**. A sealed
 > message reveals nothing and can't be forged. The secret travels only in the out‑of‑band pairing
