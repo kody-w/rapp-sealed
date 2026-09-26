@@ -1,5 +1,9 @@
 # rapp-sealed
 
+<!-- rapp1:network-header:start -->
+[![RAPP/1](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-sealed.svg)](https://github.com/kody-w/rapp-hive-public/blob/main/portfolio/repos/rapp-sealed.md) · **New to RAPP?** [Start here: get your Brainstem →](https://github.com/kody-w/rapp-installer#start-here)
+<!-- rapp1:network-header:end -->
+
 **`rapp-sealed/1.0`** — the canonical end‑to‑end sealed‑envelope codec for the RAPP neighborhood.
 One reference implementation + conformance vectors, so every place that seals (e.g. the browser
 vBrainstem, the bridge, the CLI, Node, the rapp-mcp host) speaks **exactly** the same bytes and
